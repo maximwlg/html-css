@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Поле ввода</title>
+</head>
+
+<body>
+<form method="post" action="" id="test">
+
+<h3>Поле ввода</h3>
+<p>Однострочное текстовое поле:<br>
+    <input type="text" name="name" id="name" maxlength="50">
+</p>
+<p>Нередактируемое поле:<br>
+	<input type="text" name="course" id="course" value="HTML" readonly>
+</p>
+<p>Пароль:<br>
+    <input type="password" name="password" id="password" minlength="5"> 
+</p>
+
+<h3>Новые возможности элемента &lt;input&gt;</h3>
+<p>Поле для e-mail:<br>
+    <input type="email" name="email" id="email" required multiple>
+</p>
+<p>Поле для ввода URL-адреса:<br>
+    <input type="url" name="url" id="url" size="70">
+</p>
+<p>Поле для поиска:<br>
+    <input type="search" name="poisk" id="poisk" placeholder="Что вы ищете?">
+</p>
+<p>Поле для загрузки файла:<br>
+    <input type="file" name="upload" id="upload">
+</p>
+<p>Телефон:<br>
+    <input type="tel" name="phone" id="phone">
+</p>    
+<p>Поле для ввода чисел:<br>
+    <input type="number" name="age" id="age1">
+</p>    
+<p>Поле для ввода чисел в опред. диапазоне:<br>
+    <input type="number" name="age" id="age2" min="0" max="120" value="30">
+</p>    
+<p>Ползунок:<br>
+    <input type="range" name="weight" id="weight" min="50" max="1000" value="160" step="150">
+</p>
+<p>Цвет:<br>
+    <input type="color" name="color" id="color" value="#ff0000">
+</p>    
+<h3>Возможности HTML5 для ввода времени</h3>
+<p>Дата без календаря:<br> 
+    <input type="datetime" id="date1" name="date">
+</p>
+<p>Дата по шаблону, с календарем:<br> 
+    <input type="date" id="date2" name="date">
+</p>    
+<p>Месяц:<br>
+    <input type="month" id="month" name="month">
+</p>
+<p>Неделя:<br>
+    <input type="week" id="week" name="week">
+</p>
+<p>Время:<br>
+    <input type="time" id="time" name="time">
+</p>
+<p>Дата и время:<br>
+    <input type="datetime-local" id="local" name="local">
+</p>
+<h3>Подключение выпадающего списка для выбора значения</h3>
+<p>
+	<input type="url" name="location" id="location" list="urls" size="60">
+	<datalist id="urls">
+		<option label="MIME: Format of Internet Message Bodies" value="http://tools.ietf.org/html/rfc2045">
+		<option label="HTML 4.01 Specification" value="http://www.w3.org/TR/html4/">
+		<option label="Form Controls" value="http://www.w3.org/TR/xforms/slice8.html#ui-commonelems-hint">
+		<option label="Scalable Vector Graphics (SVG) 1.1 Specification" value="http://www.w3.org/TR/SVG/">
+		<option label="Feature Sets - SVG 1.1 - 20030114" value="http://www.w3.org/TR/SVG/feature.html">
+		<option label="The Single UNIX Specification, Version 3" value="http://www.unix-systems.org/version3/">
+	</datalist>
+</p>
+<p>
+<input type="submit" id="submit">
+</p>
+</form>
+<br>
+<br>
+<br>
+</body>
+</html>

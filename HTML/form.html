@@ -1,0 +1,56 @@
+<!doctype html> <!--  объявляем версию HTML5-->
+<html lang="ru"> <!-- lang="ru" для программ чтения с экрана указываем язык страницы-->
+<head>  <!-- раздел заголовка -->
+<title>Формы</title>  <!-- заголовок окна браузера-->
+<meta charset="utf-8">  <!-- кодировка -->
+<meta name="description" content="Описание страницы">
+<meta name="keywords" content="ключевые слова; словосочетания">
+</head>
+<body>  <!-- раздел содержимого -->
+<form action="#" method="post">
+<fieldset>
+
+<legend>Контакты</legend>
+
+<label for="name">Введите имя:</label>
+<input type="text" placeholder="вася" id="name">
+
+<label for="pw">Введите пароль:</label>
+<input type="password" id="pw" required>
+
+<label for="email">Введите e-mail:</label>
+<input type="email" placeholder="123@vk.ru" id="email" required>
+
+</fieldset>
+
+<fieldset>
+
+<legend>Вопросы</legend>
+
+<label for="age">Сколько вам лет?</label>
+<input type="number" placeholder="10" id="age" min="6" max="19"><br><br>
+
+<label for="bio">расскажите о себе</label>
+<textarea id="bio"></textarea>
+
+<p>ваши хобби</p>
+<input type="checkbox" value="кино" name="hobby" id="movie">
+<label for="movie">кино</label><br>
+
+<input type="checkbox" value="музыка" name="hobby" id="music">
+<label for="music">музыка</label><br>
+
+<p>подписаться на рассылку</p>
+<input type="radio" value="yes" name="spam" id="yes" checked>
+<label for="yes">да</label><br>
+
+<input type="radio" value="no" name="spam" id="no">
+<label for="no">нет</label><br>
+
+</fieldset>
+
+<input type="submit" value="вперёд!">
+
+</form>
+</body>
+</html>
